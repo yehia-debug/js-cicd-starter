@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
   res.json({ message: "App is running" });      // Define a route for the root URL that responds with a JSON message
 });
 
-app.get("/health", (req, res) => {
+app.get("/health", (req, res) => {          
   res.json({ status: "ok" });                   // Define a route for the health check endpoint that responds with a JSON message
 });
 
