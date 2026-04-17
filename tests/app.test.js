@@ -31,6 +31,6 @@ describe("GET /health (wrong expectation)", () => {
   it("should return wrong status to force failure", async () => {
     const res = await request(app).get("/health");
 
-    expect(res.body.status).toBe("healthy"); // WRONG on purpose ( was healthy)
+    expect(res.body.status).toBe("ok"); // WRONG on purpose ( was healthy)
   });
 });
